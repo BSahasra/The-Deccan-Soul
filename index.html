@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Deccan Soul — Telangana Heritage</title>
+  <meta name="description"
+    content="Discover the hidden heritage, cultures, monuments, arts, festivals, crafts and cuisine of Telangana.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="hero" id="home">
+    <nav class="navbar">
+      <a class="brand" href="#home"><span>✦</span> THE DECCAN SOUL</a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <div class="nav-links">
+        <a href="#discover">Discover</a>
+        <a href="#about">Our Story</a>
+        <a href="#categories">Categories</a>
+      </div>
+    </nav>
+    <div class="hero-content">
+      <p class="eyebrow">PRESERVE • EXPLORE • CONNECT</p>
+      <h1>Find the soul<br><em>of the Deccan.</em></h1>
+      <p class="hero-text">A digital journey through the unique cultures, hidden heritage, living traditions, crafts and
+        flavours of Telangana.</p>
+      <a class="cta" href="#discover">Start exploring <span>↓</span></a>
+    </div>
+    <div class="hero-pattern"></div>
+  </header>
+
+  <main>
+    <section class="intro section" id="about">
+      <div>
+        <p class="eyebrow">THE IDEA</p>
+        <h2>Beyond the<br><em>obvious.</em></h2>
+      </div>
+      <div class="intro-copy">
+        <p>Telangana's richest stories are not always found on the usual tourist map but are hidden in old streets,
+          forests, villages, festivals, kitchens and oral traditions.</p>
+        <p><strong>The Deccan Soul</strong> brings these stories together in one place — making heritage easier to
+          discover for visitors, researchers and the younger generation.</p>
+      </div>
+    </section>
+
+    <section class="categories section" id="categories">
+      <p class="eyebrow">SIX LENSES</p>
+      <h2>See Telangana<br><em>from every angle.</em></h2>
+      <div class="category-grid">
+        <button class="cat-card" data-cat="culture"><span>01</span><b>Regional<br>Cultures</b><small>Communities &
+            identity</small></button>
+        <button class="cat-card" data-cat="monuments"><span>02</span><b>Historic<br>Monuments</b><small>Stone, stories &
+            time</small></button>
+        <button class="cat-card" data-cat="arts"><span>03</span><b>Folklore &<br>Art</b><small>Living creative
+            traditions</small></button>
+        <button class="cat-card" data-cat="festivals"><span>04</span><b>Festivals</b><small>Celebration &
+            community</small></button>
+        <button class="cat-card" data-cat="crafts"><span>05</span><b>Handicrafts &<br>Textiles</b><small>Made by
+            hand</small></button>
+        <button class="cat-card" data-cat="food"><span>06</span><b>Traditional<br>Cuisine</b><small>Flavours of the
+            Deccan</small></button>
+      </div>
+    </section>
+  </main>
+
+
+    <section class="discover section" id="discover">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">EXPLORE TELANGANA</p>
+          <h2>25 stories.<br><em>One living heritage.</em></h2>
+        </div>
+        <p class="section-note">Browse the collection or search for a story that catches your eye.</p>
+      </div>
+
+      <div class="controls">
+        <input id="search" type="search" placeholder="Search cultures, places, food, festivals..."
+          aria-label="Search collection">
+        <select id="categoryFilter" aria-label="Filter by category">
+          <option value="all">All categories</option>
+          <option value="culture">Regional Cultures</option>
+          <option value="monuments">Historic Monuments & Temples</option>
+          <option value="arts">Folklore, Art & Literature</option>
+          <option value="festivals">Festivals</option>
+          <option value="crafts">Handicrafts & Textiles</option>
+          <option value="food">Traditional Cuisine</option>
+        </select>
+      </div>
+
+      <div class="collection" id="collection"></div>
+    </section>
+
+  <footer>
+    <div class="footer-brand"><span>✦</span> THE DECCAN SOUL</div>
+    <p>Preserving the Past and Connecting it to the Future.</p>
+    <div class="footer-bottom"><span>PRESERVE• EXPLORE • CONNECT</span><span>© 2026 The Deccan Soul</span></div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close></div>
+    <article class="modal-card">
+      <button class="close" data-close aria-label="Close">×</button>
+      <div class="modal-number" id="modalNumber"></div>
+      <p class="eyebrow" id="modalCategory"></p>
+      <h2 id="modalTitle"></h2>
+      <p id="modalDescription"></p>
+      <div class="modal-accent"></div>
+    </article>
+  </div>
+SSS
+  <script src="script.js"></script>
+</body>
+
+</html>
